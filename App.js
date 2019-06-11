@@ -1,14 +1,12 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { DangerZone } from "expo";
+import LottieView from "lottie-react-native";
 import amination1 from "./animation1.json";
 import amination2 from "./animation2.json";
 
-const { Lottie } = DangerZone;
-
 const App = () => (
   <View style={styles.animationContainer}>
-    <Lottie
+    <LottieView
       style={styles.animation}
       source={amination1}
       autoPlay
